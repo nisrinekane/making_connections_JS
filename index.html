@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="flexed">
+        <h1>Profile</h1>
+        <div class="nav-links flexed">
+            <ul class="flexed">
+                <li>Home</li>
+                <li>My Profile</li>
+                <li>Find Connections</li>
+            </ul>
+            <button class="signout-btn">Sign Out</button>
+        </div>
+    </nav>
+
+
+    <!-- main content -->
+    <div class="main-container flexed">
+
+        <!-- left column -->
+        <div class="left-col">
+
+            <!-- profile box/left col -->
+            <div class="profile-section">
+                <div class="profile-header">
+                    <!-- background image here -->
+                    <img class="profile-pic" src="assets/profile_picture.jpeg" alt="profile picture">
+                </div>
+                <div class="profile-info-section">
+                    <h2 class="name" id="profileName">Anne Wojcicki</h2>
+                    <p>23andMe Co-Founder and CEO</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Mountain View, California. 500+ connections</p>
+                    <p><i class="fa-solid fa-gear"></i><a href="#" onclick="changeName(profileName)">edit profile</a> </p>
+                </div>
+            </div>
+
+            <!-- education box/ left col -->
+            <div class="education-section">
+                <div class="education-header">
+                    <h3>Education</h3>
+                </div>
+                <div>
+                    <!-- college -->
+                    <div class="school-section flex-start">
+                        <div>
+                            <img class="school-pic" src="assets/univeristy-logo.webp" alt="yale logo">
+                        </div>
+                        <div>
+                            <h4>Yale University</h4>
+                            <p>BS in Biology</p>
+                            <p>1992 - 1996</p>
+                        </div>
+                    </div>
+                    <!-- high school -->
+                    <div class="school-section flex-start">
+                        <div>
+                            <img class="school-pic" src="assets/school-logo.png" alt="high school logo">
+                        </div>
+                        <div>
+                            <h4>Henry Gunn High School</h4>
+                            <p>Hish School Diploma</p>
+                            <p>1988 - 1992</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right column -->
+        <div class="right-col">
+            <div class="connections-requests" id="connections-requests">
+                <div class="connection-requests-header flex-start">
+                    <button class="requests-btn" id="request-num">3</button>
+                    <h3>Connection Requests</h3>
+                </div>
+                <!-- first request -->
+                <div>
+                    <div class="connection-requests-people ">
+                        <div class="request-person flexed" id="person1">
+                            <div class="flex-start">
+                                <img class="request-avatar" src="assets/avatar.webp" alt="person picture">
+                                <p>Todd E.</p>
+                            </div>
+                            <div class="flex-start">
+                                <i class="fa-solid fa-circle-check fa-lg" onclick="add(person1)"></i>
+                                <i class="fa-solid fa-circle-xmark fa-lg" onclick="reject(person1)"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- second request -->
+                    <div class="connection-requests-people">
+                        <div class="request-person flexed" id="person2">
+                            <div class="flex-start">
+                                <img class="request-avatar" src="assets/avatar2.webp" alt="person picture">
+                                <p>Finn K.</p>
+                            </div>
+                            <div class="flex-start">
+                                <i class="fa-solid fa-circle-check fa-lg" onclick="add(person2)"></i>
+                                <i class="fa-solid fa-circle-xmark fa-lg" onclick="add(person2)"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- third request -->
+                    <div class="connection-requests-people">
+                        <div class="request-person flexed" id="person3">
+                            <div class="flex-start">
+                                <img class="request-avatar" src="assets/avatar3.png" alt="person picture">
+                                <p>Sarah C.</p>
+                            </div>
+                            <div class="flex-start">
+                                <i class="fa-solid fa-circle-check fa-lg" onclick="add(person3)"></i>
+                                <i class="fa-solid fa-circle-xmark fa-lg" onclick="reject(person3)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- friends box -->
+            <div class="friends">
+                <div class="friends-header flex-start">
+                    <button class="friends-btn" id="friend-num">500</button>
+                    <h3>Your Connections</h3>
+                </div>
+                <div class="friends-section">
+                    <!-- friend 1 -->
+                    <div class="friend-info flex-start">
+                        <div class="flex-start">
+                            <img class="request-avatar" src="assets/contact1.jpeg" alt="friend">
+                            <p>Marissa M.</p>
+                        </div>
+                    </div>
+
+                    <!-- friend 2 -->
+                    <div class="friend-info flex-start">
+                        <div class="flex-start">
+                            <img class="request-avatar" src="assets/contact2.png" alt="friend">
+                            <p>Julia C.</p>
+                        </div>
+                    </div>
+
+                    <!-- friend 3 -->
+                    <div class="friend-info flex-start">
+                        <img class="request-avatar" src="assets/contact3.webp" alt="friend">
+                        <p>Joaquin D.</p>
+                    </div>
+                    <div>
+                        <p class="view-more"> <a href="linkedin.com">view more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

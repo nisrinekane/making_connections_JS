@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* utility classes */
+.flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+
+/* navbar  */
+nav {
+    background-color: #1c1c1c;
+    padding: 1em 3em;
+    color: #FFF;
+}
+
+ul {
+    list-style: none;
+    color: #7E7E7E;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.signout-btn {
+    font-size: 1em;
+    background-color: #00CBFE;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 11px;
+    padding: 5px;
+}
+
+
+/* main container */
+.main-container {
+    margin: 10vh 20vh;
+}
+
+.left-col {
+    flex: 2;
+}
+
+.right-col {
+    flex: 1;
+    align-self: flex-start;
+}
+
+
+/* left columm */
+
+/* profile section */
+.profile-section {
+    height: fit-content;
+    border: 2px solid #F5F5F5;
+    border-radius: 16px;
+}
+.profile-header {
+    background-image: url("assets/wallpaper.jpeg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    border: solid 2px #FFF;
+    box-shadow: 3px 3px 5px #FFF;
+    position: relative;
+    top: 60px;
+    left: 20px
+}
+
+.profile-info-section {
+    padding: 5em 1em 1em;
+}
+
+
+.name {
+    margin-bottom: 30px;
+}
+.fa-gear {
+    color: #00CBFE;
+}
+
+.fa-gear {
+    margin: 25px 10px 10px 0px;
+}
+
+.fa-location-dot {
+    margin: 25px 10px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #00CBFE;
+}
+
+.location {
+    color: gray
+}
+
+/* education section */
+.education-header {
+    background-color: #F5F5F5;
+    padding: 1.5em 1em;
+}
+
+.school-pic {
+    width: 50px;
+    margin: 2em 1em;
+}
+
+.education-section {
+    border: 2px solid #F5F5F5;
+    border-radius: 16px;
+    margin: 3em 0em;
+}
+
+/* right column content */
+
+/* connection requests */
+.connections-requests {
+    border: 2px solid #F5F5F5;
+    border-radius: 16px;
+}
+.connection-requests-header{
+    background-color: #F5F5F5;
+    padding: 1.5em 1em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.requests-btn {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #FA3E3E;
+    color: #FFF;
+    border: 1px solid #FA3E3E;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+}
+
+.request-avatar {
+    width: 50px;
+    border-radius: 50px;
+    bordeR: 2px solid #000;
+}
+
+.request-person, .friend-info {
+    padding: 1em;
+}
+
+.fa-circle-check {
+    color: #34B233;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+/* friends sections */
+
+.friends {
+    border: 2px solid #F5F5F5;
+    border-radius: 15px;
+    margin: 40px 0px;
+}
+.friends-header {
+    background-color: #F5F5F5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1.5em 2em;
+}
+
+.friends-btn {
+    background-color: #FA3E3E;
+    border: 2px solid #FA3E3E;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+    padding: 5px;
+}
+
+.view-more {
+    border-top: solid 2px #F5F5F5;
+    text-align: center;
+    padding: 1em;
+}
+
+
